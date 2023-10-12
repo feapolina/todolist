@@ -1,4 +1,5 @@
 package br.com.feapolina.todolist.user;
+
 import lombok.Data;
 
 import java.util.UUID;
@@ -10,8 +11,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Column;
 
-
-@Data // importa os getters e os setters automaticamente 
+@Data // importa os getters e os setters automaticamente
 @Entity(name = "tabela_usuarios")
 public class ModeloUsuario {
 
@@ -23,9 +23,8 @@ public class ModeloUsuario {
     private String username;
     private String name;
     private String password;
-    
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    
 }
