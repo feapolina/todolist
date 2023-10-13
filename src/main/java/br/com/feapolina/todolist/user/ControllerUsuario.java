@@ -40,6 +40,6 @@ public class ControllerUsuario {
         modeloUsuario.setPassword(senhaHashada);
 
         var usuarioCriado = this.userRepository.save(modeloUsuario);
-        return ResponseEntity.status(HttpStatus.CREATED).body(usuarioCriado);
+        return ResponseEntity.status(HttpStatus.OK).body(usuarioCriado);
     }
 }
